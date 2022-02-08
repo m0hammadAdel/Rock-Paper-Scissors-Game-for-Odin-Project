@@ -15,7 +15,7 @@ Once the players choose an option it will show up on player's section and comput
 ### Simple logic and fast performance
 
 * I used one event listener to get any choice form player
-* I used n class to make objects of choices
+* I used a class to make objects of choices
 
 ### Responsive
 
