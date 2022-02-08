@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="./media/mainLogo.png" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+    <!-- google fonts main font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <!-- font for title -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>rock paper scissors</h1>
+        <p class="slogan">who ever scores 5 first wins</p>
+    </header>
+    <section class="game-over">
+        <div class="carpet"></div>
+        <div class="pop-up ">
+            <div class="info-message">you won</div>
+            <button class="repeat" value="Reload Page" onClick="document.location.reload(true)">play again</button>
+        </div>
+    </section>
+    <main>
+        <section class="game-monitor">
+            <div class="game-status">
+                <div class="monitor player-choice" data-id="none"></div>
+                <p class="vs">VS</p>
+                <div class="monitor computer-choice" data-id="none"></div>
+            </div>
+            <div class="score"><span class="player-score">0</span> : <span class="computer-score">0</span></div>
+        </section>
+        <section class="choices">
+            <div class="monitor" data-id="rock" title="rock">✊</div>
+            <div class="monitor" data-id="paper" title="paper">✋</div>
+            <div class="monitor" data-id="scissors" title="scissors">✌</div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
